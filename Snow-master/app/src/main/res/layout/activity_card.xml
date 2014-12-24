@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout">
+<ImageView
+    android:id="@+id/img_title2"
+    android:paddingTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:layout_weight="0.7"
+    android:scaleType="fitCenter"
+    android:src="@drawable/card_title"/>
+    <TextView
+        android:id="@+id/tv_who"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="@string/to_who"/>
+    <TextView
+        android:id="@+id/tv_mc_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:paddingLeft="40sp"
+        android:text="Merry Christmas"/>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/tv_mc_word"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="6.0"
+        android:scaleType="fitCenter"
+        />
+
+ <!--   <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/open"
+        android:background="@drawable/circle"
+        /> -->
+
+    <TextView
+        android:id="@+id/tv_fromWho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="@dimen/text_size"
+        android:paddingRight="10dp"
+        android:text="@string/from_who"/>
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.7"
+        android:scaleType="fitCenter"
+        android:src="@drawable/card_bottom"/>
+</LinearLayout>
